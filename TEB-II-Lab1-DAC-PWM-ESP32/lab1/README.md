@@ -30,8 +30,17 @@ Se genera un voltaje programado con un ESP32 por dos métodos, el **DAC de 8 bit
 firmware/lab1_dac_pwm/lab1_dac_pwm.ino   Sketch de Arduino para el ESP32
 data/tabla1_calibracion.csv              Tabla 1 (datos medidos)
 analysis.py                              Errores, sensibilidad y curva de calibración
-docs/                                    Esquemático, diagrama de bloques, gráficas
+hardware/kicad/                          Proyecto KiCad 10 (esquemático editable)
+docs/esquematico_labo1.pdf               Esquemático exportado (etapas 1–3)
+docs/diagrama_bloques.png                Diagrama de bloques del sistema
+docs/curva_calibracion.png               Curva de calibración (la genera analysis.py)
 ```
+
+## Diagrama de bloques
+
+![Diagrama de bloques](docs/diagrama_bloques.png)
+
+El PC envía el voltaje objetivo por USB serial; el firmware lo convierte a un código 0–255 que se entrega en paralelo al DAC (GPIO25) y al PWM LEDC de 5000 Hz (GPIO27). El PWM pasa por el filtro RC para obtener un voltaje continuo, y ambas salidas se miden con los instrumentos.
 
 ## Circuito
 
@@ -44,7 +53,13 @@ docs/                                    Esquemático, diagrama de bloques, grá
 
 Materiales: ESP32, cable USB, resistencia 10 kΩ, capacitor cerámico 1 µF, protoboard, jumpers, osciloscopio y multímetro digital.
 
-*(El esquemático y el diagrama de bloques se agregarán en `docs/`.)*
+El esquemático completo está en [`docs/esquematico_labo1.pdf`](docs/esquematico_labo1.pdf) (fuente editable en [`hardware/kicad/`](hardware/kicad/)) y se divide en tres etapas:
+
+| Etapa | Contenido |
+|---|---|
+| 1 | ESP32 con las salidas crudas: nodo D (GPIO25, DAC) y nodo P (GPIO27, PWM) |
+| 2 | Filtro RC en GPIO27 (R serie 10 kΩ, C a GND) → PWM acondicionado en el nodo filtrado |
+| 3 | Montaje de medición: DAC crudo y PWM acondicionado llevados al multímetro |
 
 ## Firmware
 
