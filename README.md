@@ -16,7 +16,6 @@ Este repositorio reunirá todos los laboratorios del curso **Taller de Equipos B
 
 ```
 firmware/    Código para el microcontrolador
-data/        Datos medidos (CSV)
 docs/        Esquemáticos, diagramas y gráficas de resultados
 hardware/    Proyectos de KiCad
 analysis.py  Procesamiento de datos y gráficas

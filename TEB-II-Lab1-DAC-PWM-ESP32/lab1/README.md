@@ -28,7 +28,6 @@ Se genera un voltaje programado con un ESP32 por dos métodos, el **DAC de 8 bit
 
 ```
 firmware/lab1_dac_pwm/lab1_dac_pwm.ino   Sketch de Arduino para el ESP32
-data/tabla1_calibracion.csv              Tabla 1 (datos medidos)
 analysis.py                              Errores, sensibilidad y curva de calibración
 hardware/kicad/                          Proyecto KiCad 10 (esquemático editable)
 docs/esquematico_labo1.pdf               Esquemático exportado (etapas 1–3)
@@ -72,7 +71,7 @@ El programa cumple los requisitos de la guía: lee un voltaje (0–3.3 V) por el
 
 1. **Verificación inicial.** Cargar el sketch, conectar GPIO25 al osciloscopio y enviar 1.65 V (mitad de escala). Luego observar GPIO27 sin filtro: debe verse una onda cuadrada.
 2. **Acondicionar el PWM.** Armar el filtro RC (R serie en la línea PWM, C del nodo a tierra) y verificar en el osciloscopio que el rizado sea pequeño.
-3. **Medición.** Enviar voltajes de 0 a 3.3 V (cada 0.5 V), medir con el multímetro en el nodo D y en el nodo filtrado, y registrar en `data/tabla1_calibracion.csv`.
+3. **Medición.** Enviar voltajes de 0 a 3.3 V (cada 0.5 V), medir con el multímetro en el nodo D y en el nodo filtrado, y registrar los valores en la Tabla 1.
 
 ## Análisis
 
