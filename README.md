@@ -10,12 +10,14 @@ Este repositorio reunirá todos los laboratorios del curso **Taller de Equipos B
 
 | N.º | Tema | Carpeta | Estado |
 |---|---|---|---|
-| 1 | Generación y calibración de una señal analógica con ESP32 (DAC y PWM filtrado) | [`TEB-II-Lab1-DAC-PWM-ESP32/lab1`](TEB-II-Lab1-DAC-PWM-ESP32/lab1) | En curso |
+| 1 | Generación y calibración de una señal analógica con ESP32 (DAC y PWM filtrado) | [`lab1`](lab1) | En curso |
+| 2 | Caracterización de un sensor de presión manométrica con la Ley de Boyle (MPS20N0040D-D + HX710B + ESP32) | [`lab2`](lab2) | Completado |
 
 ## Organización de cada laboratorio
 
 ```
 firmware/    Código para el microcontrolador
+data/        Datos medidos (CSV)
 docs/        Esquemáticos, diagramas y gráficas de resultados
 hardware/    Proyectos de KiCad
 analysis.py  Procesamiento de datos y gráficas

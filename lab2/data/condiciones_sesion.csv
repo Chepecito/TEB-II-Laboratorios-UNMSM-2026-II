@@ -1,0 +1,12 @@
+dato,simbolo,valor,unidad
+Lecturas promediadas por punto,N,20,
+Cuentas a presion atmosferica al inicio (media),C0_i,3869164,cuentas
+Cuentas a presion atmosferica al inicio (desv. est.),sigma0,224.46,cuentas
+Volumen de agua inyectado - medicion 1,Va1,0.78,mL
+Volumen de agua inyectado - medicion 2,Va2,0.76,mL
+Presion atmosferica usada en el programa,Patm,101.3,kPa
+Altitud del laboratorio,h,100,m
+Volumen inicial del embolo,V0,1.00,mL
+Volumen muerto provisional usado en el programa,Vm,0.76,mL
+Marca de parada del embolo,Vj_min,0.55,mL
+Cuentas a presion atmosferica al final (media),C0_f,3883265.65,cuentas
