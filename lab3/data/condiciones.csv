@@ -1,0 +1,5 @@
+medicion,valor,unidad
+V0 (pin 3V3 a GND),3.312,V
+Alimentacion positiva (pin 4),12,V
+Alimentacion negativa (pin 11),-12,V
+Offset de salida (entrada a GND),0.015,V

@@ -1,0 +1,6 @@
+resistencia,ubicacion,nominal_ohm,medido_ohm
+R1,Divisor de la celda simulada,10000,9720
+R2,Divisor de la celda simulada,180,213.9
+Rg,Amplificador,1000,972
+Rf1,Amplificador,10000,9880
+Rf2,Amplificador,10000,9900
